@@ -19,18 +19,6 @@
             text-align: center;
             font-size: 15px;
         }
-        @media (min-width: 768px) {
-      #nav-baritem {
-        font-size: 18px; /* Tablet and up */
-      }
-    
-    }
-    @media (min-width: 992px) {
-      #nav-baritem {
-        font-size: 20px; /* Desktop and up */
-      }
-    }
-  
         #nav-container{
             width: 20%;
             text-align: center;
@@ -48,33 +36,19 @@
         background-repeat: no-repeat;
         background-color:  hsl(217, 28%, 15%);
         min-height: 480px;
-        
-      }
-      @media (max-width: 768px) {
-      #section1 {
-        background-image: url(bg-curvy-mobile.svg);
-        padding-left: 20px;
-        padding-right: 20px;
-      }
-    }
-    @media (min-width: 992px) {
-      #section1 {
-       background-image: url(bg-curvy-desktop.svg); 
-       padding-top: 50px;
-        margin-top: 50px;
-      }
-    }
+        }
         #btn-start{
             border-radius: 25px;
             background-color: hsl(198, 60%, 50%);
             color: white;
             width: 200px;
             height: 48px;
-            margin-bottom: 0px;
+            margin-bottom: 15px; 
+            margin-top: 10px;
         }
         #stay{
-      font-size: 30px; /* Mobile default */
-    }
+            font-size: 30px; /* Mobile default */
+        }
         .icon-para{
             padding: 10px;
         }
@@ -84,29 +58,21 @@
         #flex-image{
             color: white;
         }
-        #main-testmonial{
-            background-color:  hsl(218, 28%, 13%);
-            padding-bottom: 200px;
-            padding-left: 40px;
-            padding-right: 40px;
-            margin-top: -60px;
-        }
+        
         .testimonial {
-      background-color: #2b2c3f;
-      border-radius: 10px;
-      padding: 1.5rem;
-      margin-bottom: 6rem;
-    }
+            background-color: #2b2c3f;
+            border-radius: 10px;
+            padding: 1.5rem;
+            margin-bottom: 6rem;
+        }
         @media (min-width: 992px) {
-      .col-lg-5th {
-        flex: 0 0 auto;
-        width: 20%; 
+           .col-lg-5th {
+           flex: 0 0 auto;
+           width: 20%; 
       }
       }
       #footer-main{
-         padding: 110px 0 50px; 
-        position: relative;
-        z-index: 1;
+         
        /* margin-top: -90px; */
       }
       #mid-section{
@@ -114,7 +80,6 @@
             position: relative;
             z-index: 2;
             padding-top: 20px;
-            
         }
       #email-section{
         background-color: white;
@@ -124,16 +89,37 @@
         box-shadow: 0 ;
         margin-right: 20px;
       }
-      @media (min-width: 768px) {
+      @media (max-width: 480px) {
+        #nav-baritem {
+        font-size: 15px; 
+      }
+      #main-testmonial{
+            background-color:  hsl(218, 28%, 13%);
+            /* padding-bottom: 250px; */
+            padding-left: 40px;
+            padding-right: 40px;
+            margin-top: -60px;
+        }
+        #section1 {
+        background-image: url(bg-curvy-mobile.svg);
+        padding-left: 20px;
+        padding-right: 20px;
+      }
       #footer-logo {
-        padding-left: 40px;
-        padding-bottom: 10px;
+        width: 100px;
+        height: 40px;
+        padding-left: 10px;
       }
       #footer-main {
-         margin-top:  0px; 
+       padding: 240px 0  50px;  
+        position: relative;
+        z-index: 1;
+         margin-top: 90px;
+         /* margin-bottom: 50px; */
+         margin-top: -230px;
       }
       #email-section {
-        width: 80%;
+        width: 85%;
       }
       #stay {
         font-size: 18px; /* Tablet and up */
@@ -142,16 +128,34 @@
         padding-bottom: 20px;
             margin-left: 10%;
             margin-right: 10%;
-            margin-top: 0px;
+            margin-top: -120px;
        }
     }
     @media (min-width: 992px) {
+       #nav-baritem {
+        font-size: 20px; /* Desktop and up */
+      }
+      #main-testmonial{
+            background-color:  hsl(218, 28%, 13%);
+            padding-bottom: 200px;
+            padding-left: 40px;
+            padding-right: 40px;
+            margin-top: -60px;
+        }
+      #section1 {
+       background-image: url(bg-curvy-desktop.svg); 
+       padding-top: 50px;
+        margin-top: 50px;
+      }
       #footer-logo {
         padding-left: 120px;
         padding-bottom: 10px;
       }
       #footer-main {
-         margin-top: -90px;
+        padding: 110px 0 50px; 
+        position: relative;
+        z-index: 1;
+         margin-top: -110px;
       }
       #email-section {
         width: 60%;
@@ -245,7 +249,6 @@
         <p id="icon-para">Whether you're sharing holiday photos or work documents, Fylo has you covered allowing for all file types to be securely stored and shared.</p>
       </div>
     </div>
-
   </div>
 </section>
 <section>
