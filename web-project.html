@@ -43,22 +43,25 @@
             padding-right: 100px;
         }
         #section1{
-        padding: 20px;
-        
         background-size:cover;
         background-position: center;
         background-repeat: no-repeat;
         background-color:  hsl(217, 28%, 15%);
-        /* margin-top: 100px; */
+        min-height: 480px;
+        
       }
       @media (max-width: 768px) {
       #section1 {
         background-image: url(bg-curvy-mobile.svg);
+        padding-left: 20px;
+        padding-right: 20px;
       }
     }
     @media (min-width: 992px) {
       #section1 {
-       background-image: url(bg-curvy-desktop.svg);
+       background-image: url(bg-curvy-desktop.svg); 
+       padding-top: 50px;
+        margin-top: 50px;
       }
     }
         #btn-start{
@@ -70,7 +73,6 @@
             margin-bottom: 0px;
         }
         #stay{
-
       font-size: 30px; /* Mobile default */
     }
         .icon-para{
@@ -100,6 +102,12 @@
         flex: 0 0 auto;
         width: 20%; 
       }
+      }
+      #footer-main{
+         padding: 110px 0 50px; 
+        position: relative;
+        z-index: 1;
+       /* margin-top: -90px; */
       }
       #mid-section{
             text-align: center;
@@ -158,12 +166,7 @@
             margin-top: -90px;
        }
     }
-      #footer-main{
-         padding: 110px 0 50px; 
-        position: relative;
-        z-index: 1;
-       /* margin-top: -90px; */
-      }
+      
       a{
         text-decoration: none;
         color:white;
@@ -199,14 +202,15 @@
     <img src="illustration-intro.png" alt="Image" class="img-fluid" style="max-height: 300px;">
 </div>
 <section class="text-center" id ="section1">
+  <div class="text-center" id="container1">
      <h2>All your files in one secure location,<br>accessible anywhere.</h2>
-     </div>
-     <p class="col mt-12 mb-4">
-      Fylo stores all your most important files in one secure location. Access them wherever you need, share and collaborate with friends, family, and co-workers.
+     <p class="col mt-12 mb-4" style="font-size: 20px;">
+      Fylo stores all your most important files in one secure location.<br>Access them wherever you need, share and collaborate with friends, family, and co-workers.
     </p>
     <button type="button" class="btn btn-info" id="btn-start">Get Started</button>
+    </div>
 </section>
-<section class="container-fluid py-5" style="background-color:  hsl(218, 28%, 13%);">
+<section class="container-fluid py-5" style="background-color:  hsl(218, 28%, 13%);margin-top: -100px;">
   <div class="row text-center">
     <div class="col-12 col-lg-6 mb-4">
       <div class="mb-4">
