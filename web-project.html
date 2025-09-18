@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Project</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        *{
+            /* background-color:  hsl(217, 28%, 15%); */
+            color: white;
+        }
+        body{
+          background-color: hsl(217, 28%, 15%);
+        }
+        #nav-baritem {
+            color: white;
+            text-align: center;
+            font-size: 15px;
+        }
+        @media (min-width: 768px) {
+      #nav-baritem {
+        font-size: 18px; /* Tablet and up */
+      }
+    
+    }
+    @media (min-width: 992px) {
+      #nav-baritem {
+        font-size: 20px; /* Desktop and up */
+      }
+    }
+  
+        #nav-container{
+            width: 20%;
+            text-align: center;
+        }
+        #grid-item{
+            width: 40%;
+            margin: 10px;
+            text-align: center;
+            padding-left: 100px;
+            padding-right: 100px;
+        }
+        #section1{
+        padding: 20px;
+        
+        background-size:cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color:  hsl(217, 28%, 15%);
+        /* margin-top: 100px; */
+      }
+      @media (max-width: 768px) {
+      #section1 {
+        background-image: url(bg-curvy-mobile.svg);
+      }
+    }
+    @media (min-width: 992px) {
+      #section1 {
+       background-image: url(bg-curvy-desktop.svg);
+      }
+    }
+        #btn-start{
+            border-radius: 25px;
+            background-color: hsl(198, 60%, 50%);
+            color: white;
+            width: 200px;
+            height: 48px;
+            margin-bottom: 0px;
+        }
+        #stay{
+
+      font-size: 30px; /* Mobile default */
+    }
+        .icon-para{
+            padding: 10px;
+        }
+        #grid1{
+            padding-top: 20px;
+        }
+        #flex-image{
+            color: white;
+        }
+        #main-testmonial{
+            background-color:  hsl(218, 28%, 13%);
+            padding-bottom: 200px;
+            padding-left: 40px;
+            padding-right: 40px;
+            margin-top: -60px;
+        }
+        .testimonial {
+      background-color: #2b2c3f;
+      border-radius: 10px;
+      padding: 1.5rem;
+      margin-bottom: 6rem;
+    }
+        @media (min-width: 992px) {
+      .col-lg-5th {
+        flex: 0 0 auto;
+        width: 20%; 
+      }
+      }
+      #mid-section{
+            text-align: center;
+            position: relative;
+            z-index: 2;
+            padding-top: 20px;
+            
+        }
+      #email-section{
+        background-color: white;
+        color: black;
+        height: 50px;
+        border-radius: 25px;
+        box-shadow: 0 ;
+        margin-right: 20px;
+      }
+      @media (min-width: 768px) {
+      #footer-logo {
+        padding-left: 40px;
+        padding-bottom: 10px;
+      }
+      #footer-main {
+         margin-top:  0px; 
+      }
+      #email-section {
+        width: 80%;
+      }
+      #stay {
+        font-size: 18px; /* Tablet and up */
+      }
+       #mid-section {
+        padding-bottom: 20px;
+            margin-left: 10%;
+            margin-right: 10%;
+            margin-top: 0px;
+       }
+    }
+    @media (min-width: 992px) {
+      #footer-logo {
+        padding-left: 120px;
+        padding-bottom: 10px;
+      }
+      #footer-main {
+         margin-top: -90px;
+      }
+      #email-section {
+        width: 60%;
+      }
+       #stay {
+        font-size: 55px; /* Desktop and up */
+      }
+      #mid-section{
+            padding-bottom: 20px;
+            margin-left: 20%;
+            margin-right: 20%;
+            margin-top: -90px;
+       }
+    }
+      #footer-main{
+         padding: 110px 0 50px; 
+        position: relative;
+        z-index: 1;
+       /* margin-top: -90px; */
+      }
+      a{
+        text-decoration: none;
+        color:white;
+      }
+      #paragraph{
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+    </style>
+</head>
+<body>
+ <nav>
+  <div class="d-flex flex-row mb-3 justify-content-between"  style="background-color:  hsl(217, 28%, 15%); padding: 0px;">
+  <div class="p-2">
+    <img src="logo.svg" alt="Image" class="img-fluid" style="height: 40px;" width="100px">
+  </div>
+  <div class="p-2">
+    <div class="d-flex flex-row mb-3 justify-content-between">
+      <div class="p-2">
+        <a class="nav-link"id="nav-baritem">Features</a>
+      </div>
+      <div class="p-2">
+        <a class="nav-link"id="nav-baritem">Team</a>
+      </div>
+      <div class="p-2">
+        <a class="nav-link"id="nav-baritem">Sign In</a>
+      </div>
+  </div>
+  </div>
+</div>
+</nav>
+<div class="container-fluid text-center" style="background-color:  hsl(217, 28%, 15%);">
+    <img src="illustration-intro.png" alt="Image" class="img-fluid" style="max-height: 300px;">
+</div>
+<section class="text-center" id ="section1">
+     <h2>All your files in one secure location,<br>accessible anywhere.</h2>
+     </div>
+     <p class="col mt-12 mb-4">
+      Fylo stores all your most important files in one secure location. Access them wherever you need, share and collaborate with friends, family, and co-workers.
+    </p>
+    <button type="button" class="btn btn-info" id="btn-start">Get Started</button>
+</section>
+<section class="container-fluid py-5" style="background-color:  hsl(218, 28%, 13%);">
+  <div class="row text-center">
+    <div class="col-12 col-lg-6 mb-4">
+      <div class="mb-4">
+        <div class="feature-icon">
+            <img src="icon-access-anywhere.svg" alt="image" width="50px" height="50px">
+        </div>
+        <h5>Access your files, anywhere</h5>
+        <p>The ability to use a smartphone, tablet or computer to access your account means your files follow you everywhere.</p>
+      </div>
+      <div>
+       <div class="feature-icon">
+            <img src="icon-collaboration.svg" alt="image" width="50px" height="50px"><br>
+        </div>
+        <h5>Real-time collaboration</h5>
+        <p>Securely share files and folders with friends, family and colleagues for live collaboration. No email attachments required.</p>
+      </div>
+    </div>
+
+    <div class="col-12 col-lg-6 mb-4">
+      <div class="mb-4">
+         <div class="feature-icon">
+            <img src="icon-security.svg" alt="image" width="50px" height="50px"><br>
+        </div>
+        <h5>Security you can trust</h5>
+        <p>2-factor authentication and user-controlled encryption are just a couple of the security features we allow to help secure your files.</p>
+      </div>
+      <div>
+        <div class="feature-icon">
+            <img src="icon-any-file.svg" alt="image" width="50px" height="50px"><br>
+        </div>
+        <h5>Store any type of file</h5>
+        <p id="icon-para">Whether you're sharing holiday photos or work documents, Fylo has you covered allowing for all file types to be securely stored and shared.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+<section>
+ <div class="container-fluid d-flex justify-content-between" style="background-color:  hsl(218, 28%, 13%);">
+    <div class="row">
+            <div class="col-12 col-md-6">
+            <img src="illustration-stay-productive.png" alt="Image" class="img-fluid mb-4" style="padding-left: 20px;">
+        </div>
+        <div class="col-12 col-md-6">
+         <h id="stay"><strong>Stay productive, wherever you are</strong></h>
+         <p>Never let location be an issue when accessing your files. Fylo has you covered for all of your file storage needs.</p>
+         <p>Securely share files and folders with friends, family and colleagues for live collaboration. No email attachments required.</p>
+         <a href="Show" id = "flex-image">See how Fylo works <img src="icon-arrow.svg" alt="image"></a>
+        </div>
+    </div>
+</div>
+</section>
+<div style="background-color:  hsl(218, 28%, 13%);padding-left: 20px;">
+    <img src="bg-quotes.png" alt="image" width="50px" height="50px">
+</div>
+<section class="container-fluid py-5" id="main-testmonial">
+  <div class="row">
+    <div class="col-12 col-md-4">
+      <div class="testimonial">
+        <p>Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.</p>
+        <p class="mb-0">
+            <img src="profile-1.jpg" width="25px" style="border-radius: 12.5px;">
+            <strong>Satish Pascal</strong><br><small style="padding-left: 30px;">Founder & CEO, Huddle</small></p>
+      </div>
+    </div>
+    <div class="col-12 col-md-4">
+      <div class="testimonial">
+        <p>Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.</p>
+        <p class="mb-0">
+            <img src="profile-2.jpg" width="25px" style="border-radius: 12.5px;">
+            <strong style="padding-top: 0px;">Bruce Mackenzie</strong><br>
+            <small style="padding-left: 30px;">CTO, Startup Inc</small></p>
+      </div>
+    </div>
+    <div class="col-12 col-md-4">
+      <div class="testimonial">
+        <p>Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.</p>
+        <p class="mb-0">
+             <img src="profile-3.jpg" width="25px" style="border-radius: 12.5px;">
+             <strong>Iva Boyd</strong><br>
+             <small style="padding-left: 30px;">Designer, Pixelhouse</small></p>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="text-center" id="mid-section" style="background-color: hsl(217, 28%, 15%);">
+    <h>Get early access</h>
+    <p id="paragraph">It only takes a minute to sign up and our free starter tier is extremely generous. If you have any question, our support team would be happy to help you.</p>
+    <form>
+        <input type="email" id="email-section" placeholder="   email@example.com">
+    <span><button type="button" class="btn btn-info" id="btn-start">Get Started for free</button></span>
+     </form>
+    </div>
+<footer style="background-color: hsl(216, 53%, 9%);" id="footer-main">
+    <img src="logo.svg" id="footer-logo" alt="image" height="70px">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-lg-5th">
+         <img src="icon-location.svg" alt="image" width="20px" height="20px">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec justo nec lacus.</p>
+      </div>
+      <div class="col-12 col-lg-5th">
+       <img src="icon-phone.svg" alt="image" width="20px" height="20px">
+       <span>+1-53-123-4567</span><br>
+       <img src="icon-email.svg" alt="image" width="20px" height="20px">
+       <span>example@fylo.com</span>
+      </div>
+      <div class="col-12 col-lg-5th" style="padding-top:10px;">
+        <div class="col">About US</div>
+        <div class="col">Jobs</div>
+        <div class="col">Press</div>
+        <div class="col">Blog</div>
+      </div>
+      <div class="col-12 col-lg-5th">
+        <div class="col">Contact US</div>
+        <div class="col">Terms</div>
+        <div class="col">Privacy</div>
+      </div>
+      <div class="col-12 col-lg-5th">
+       <div class="d-flex justify-content-center gap-3 my-4">
+  <a href="#" class="text-white fs-3 rounded-circle d-flex align-items-center justify-content-center" 
+     style="width: 40px; height: 40px; border: 1px solid white;">
+    <i class="fab fa-facebook-f"></i>
+  </a>
+  <a href="#" class="text-white fs-3 rounded-circle d-flex align-items-center justify-content-center" 
+     style="width: 40px; height: 40px; border: 1px solid white;">
+    <i class="fab fa-twitter"></i>
+  </a>
+  <a href="#" class="text-white fs-3 rounded-circle d-flex align-items-center justify-content-center" 
+     style="width: 40px; height: 40px; border: 1px solid white;">
+    <i class="fab fa-instagram"></i>
+  </a>
+</div>
+    </div>
+  </div>
+</footer>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
