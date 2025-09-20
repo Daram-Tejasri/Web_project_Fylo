@@ -65,18 +65,8 @@
             padding: 1.5rem;
             margin-bottom: 6rem;
         }
-        @media (min-width: 992px) {
-           .col-lg-5th {
-           flex: 0 0 auto;
-           width: 20%; 
-      }
-      }
-      #footer-main{
-         
-       /* margin-top: -90px; */
-      }
       #mid-section{
-            text-align: center;
+            /* text-align: center; */
             position: relative;
             z-index: 2;
             padding-top: 20px;
@@ -119,21 +109,23 @@
          margin-top: -230px;
       }
       #email-section {
-        width: 85%;
+        /* width: 85%; */
+        width: 200px;
       }
       #stay {
-        font-size: 18px; /* Tablet and up */
+        font-size: 18px;
       }
        #mid-section {
         padding-bottom: 20px;
             margin-left: 10%;
             margin-right: 10%;
             margin-top: -120px;
+            text-align: center;
        }
     }
     @media (min-width: 992px) {
        #nav-baritem {
-        font-size: 20px; /* Desktop and up */
+        font-size: 20px; 
       }
       #main-testmonial{
             background-color:  hsl(218, 28%, 13%);
@@ -152,7 +144,7 @@
         padding-bottom: 10px;
       }
       #footer-main {
-        padding: 110px 0 50px; 
+        padding: 130px 0 50px; 
         position: relative;
         z-index: 1;
          margin-top: -110px;
@@ -161,7 +153,7 @@
         width: 60%;
       }
        #stay {
-        font-size: 55px; /* Desktop and up */
+        font-size: 55px;
       }
       #mid-section{
             padding-bottom: 20px;
@@ -169,8 +161,10 @@
             margin-right: 20%;
             margin-top: -90px;
        }
+       #footer-item{
+        margin-right: 50px;
+       }
     }
-      
       a{
         text-decoration: none;
         color:white;
@@ -214,7 +208,7 @@
     <button type="button" class="btn btn-info" id="btn-start">Get Started</button>
     </div>
 </section>
-<section class="container-fluid py-5" style="background-color:  hsl(218, 28%, 13%);margin-top: -100px;">
+<section class="container-fluid" style="background-color:  hsl(218, 28%, 13%);margin-top: -80px;">
   <div class="row text-center">
     <div class="col-12 col-lg-6 mb-4">
       <div class="mb-4">
@@ -303,7 +297,7 @@
     <h>Get early access</h>
     <p id="paragraph">It only takes a minute to sign up and our free starter tier is extremely generous. If you have any question, our support team would be happy to help you.</p>
     <form>
-        <input type="email" id="email-section" placeholder="   email@example.com">
+        <input type="email" id="email-section" placeholder="email@example.com" style="padding-left: 10px; margin-left: 13px;">
     <span><button type="button" class="btn btn-info" id="btn-start">Get Started for free</button></span>
      </form>
     </div>
@@ -311,39 +305,39 @@
     <img src="logo.svg" id="footer-logo" alt="image" height="70px">
   <div class="container">
     <div class="row">
-      <div class="col-12 col-lg-5th">
-         <img src="icon-location.svg" alt="image" width="20px" height="20px">
+      <div class="col-12 col-lg-2" id="footer-item">
+         <img src="icon-location.svg" alt="image" width="20px" height="20px" id="footer-item">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec justo nec lacus.</p>
       </div>
-      <div class="col-12 col-lg-5th">
+      <div class="col-12 col-lg-2">
        <img src="icon-phone.svg" alt="image" width="20px" height="20px">
        <span>+1-53-123-4567</span><br>
        <img src="icon-email.svg" alt="image" width="20px" height="20px">
        <span>example@fylo.com</span>
       </div>
-      <div class="col-12 col-lg-5th" style="padding-top:10px;">
+      <div class="col-12 col-lg-2" style="padding-top:10px;" id="footer-item">
         <div class="col">About US</div>
         <div class="col">Jobs</div>
         <div class="col">Press</div>
         <div class="col">Blog</div>
       </div>
-      <div class="col-12 col-lg-5th">
+      <div class="col-12 col-lg-2" id="footer-item">
         <div class="col">Contact US</div>
         <div class="col">Terms</div>
         <div class="col">Privacy</div>
       </div>
-      <div class="col-12 col-lg-5th">
-       <div class="d-flex justify-content-center gap-3 my-4">
-  <a href="#" class="text-white fs-3 rounded-circle d-flex align-items-center justify-content-center" 
-     style="width: 40px; height: 40px; border: 1px solid white;">
+      <div class="col">
+       <div class="d-flex justify-content-center">
+  <a href="#" class="text-white rounded-circle d-flex align-items-center justify-content-center" 
+     style="width: 40px; height: 40px; border: 1px solid white; margin-left: 10px;">
     <i class="fab fa-facebook-f"></i>
   </a>
-  <a href="#" class="text-white fs-3 rounded-circle d-flex align-items-center justify-content-center" 
-     style="width: 40px; height: 40px; border: 1px solid white;">
+  <a href="#" class="text-white rounded-circle d-flex align-items-center justify-content-center" 
+     style="width: 40px; height: 40px; border: 1px solid white; margin-left: 10px;">
     <i class="fab fa-twitter"></i>
   </a>
-  <a href="#" class="text-white fs-3 rounded-circle d-flex align-items-center justify-content-center" 
-     style="width: 40px; height: 40px; border: 1px solid white;">
+  <a href="#" class="text-white rounded-circle d-flex align-items-center justify-content-center" 
+     style="width: 40px; height: 40px; border: 1px solid white; margin-left: 10px;">
     <i class="fab fa-instagram"></i>
   </a>
 </div>
